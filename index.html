@@ -9,9 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
-
-	<a href="#" class="options">O</a>
-
 	<p class="chrono hidden">12' 35''</p>
 
 	<article class="team-1 equipe orange-fonce">
@@ -26,18 +23,30 @@
 					<span class="numero">11</span>
 				</li>
 			</ul>
-			<ul class="joueurs-detail joueurs-list-edit hidden">
-				<li data-n="11">
-					<span class="detail supprimer">Supprimer</span>
-					<span class="numero">
-						<input type="number" value='11'>
-					</span>
-				</li>
+			<div class="joueurs-list-edit hidden">
+				<ul class="joueurs-detail">
+					<li data-n="11">
+						<span class="detail supprimer">Supprimer</span>
+						<span class="numero">
+							<input type="number" value='11'>
+						</span>
+					</li>
 
-				<li class='text-center joueurs-add'>
-					Ajouter un joueur
-				</li>
-			</ul>
+					<li class='text-center joueurs-add'>
+						Ajouter un joueur
+					</li>
+				</ul>
+				<ul class="color-picker">
+					<li class="color-pickable orange-fonce hidden"></li>
+					<li class="color-pickable vert-clair"></li>
+					<li class="color-pickable jaune"></li>
+					<li class="color-pickable rouge"></li>
+					<li class="color-pickable mauve"></li>
+					<li class="color-pickable bleu-fonce"></li>
+					<li class="color-pickable vert-fonce"></li>
+				</ul>
+			</div>
+			
 			<div class="actions">
 				<span class="joueurs">O</span>
 			</div>
@@ -81,6 +90,8 @@
 		</div>
 
 	</article>
+
+	<a href="#" class="options">+</a>
 
 	<script src='js/jquery.min.js'></script>
 	<script src="js/main.js"></script>

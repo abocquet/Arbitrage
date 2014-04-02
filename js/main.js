@@ -7,7 +7,9 @@ $(function (){
 			$edit = $container.find('.edit'),
 
 			$listeJoueurs = $container.find('.joueurs-list'),
-			$listeJoueursEdit = $container.find('.joueurs-list-edit'),
+			$listeJoueursEdit = $container.find('.joueurs-list-edit .joueurs-detail'),
+
+			$colorPicker = $container.find('.joueurs-list-edit .colorPicker'),
 
 			$addJoueur = $listeJoueursEdit.find('.joueurs-add'),
 
@@ -19,6 +21,8 @@ $(function (){
 			score = 0,
 			joueurs = {}
 		;
+
+		console.log($listeJoueursEdit)
 
 		$container.find('.joueurs').click(function(){
 
@@ -127,7 +131,7 @@ $(function (){
 				}
 
 				$listeJoueurs.toggleClass('hidden');
-				$listeJoueursEdit.toggleClass('hidden');
+				$listeJoueursEdit.parent().toggleClass('hidden');
 
 			})
 

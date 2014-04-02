@@ -45,7 +45,7 @@ input, .nom-change
 
 	font-size: 0.5em;
 	text-align: left;
-	overflow-y: auto;
+	// overflow-y: auto;
 
 	li
 	{
@@ -76,4 +76,21 @@ input, .nom-change
 .edit-list {
 	font-size: 20px ;
 	padding-top: 10px ;
+}
+
+.color-picker {
+	max-width: 100% ;
+	height: 50px ;
+}
+
+.color-pickable {
+	width: 30px ;
+	height: 30px ;
+	
+	border: 2px solid white ;
+
+	border-radius: 300px ;
+
+	display: inline-block ;
+	border: none; 
 }

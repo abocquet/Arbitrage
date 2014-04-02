@@ -1,16 +1,10 @@
 /* Accueil */
 
-body
-{
-	width: 100%;
-	height: 100%;
-}
-
 .options
 {
 	position: fixed;
 	top: 2%;
-	left: 1%;
+	left: 2%;
 	z-index: 1;
 }
 
@@ -21,7 +15,6 @@ body
 	z-index: 10;
 
 	width: 90px;
-	// height: 90px ;
 	padding: 35px 0;
 
 	margin: auto ;
@@ -36,10 +29,11 @@ body
 
 article
 {
-	position: fixed;
+	position: absolute;
 	top: 0;
+	// bottom: 0 ;
 	width: 50%;
-	height: 100%;
+	height: 96%;
 	z-index: 0;
 
 	padding: 4% 0;
@@ -58,13 +52,18 @@ article
 
 .actions
 {
-	position: fixed;
-	bottom: 0;
-	font-size: 2em;
+	font-size: 60px;
 	height: 21%;
-	width: 50%;
-	padding: 0 6%;
+	width: 94%;
+	margin: auto;
 	@include box-sizing(border-box);
+
+	.joueurs {
+		font-size: 40px ;
+
+		position: relative ;
+		bottom: 10px ;
+	}
 }
 
 .moins
