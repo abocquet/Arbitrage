@@ -1,0 +1,13 @@
+/* Layout */
+@import  "layout/accueil.scss";
+@import  "layout/equipes.scss";
+@import  "layout/options.scss";
+
+body
+{
+	background-color: $body;
+}
+
+.text-center {
+	text-align: center ;
+}

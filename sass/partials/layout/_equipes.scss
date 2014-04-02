@@ -1,0 +1,79 @@
+/* Equipes */
+
+input, .nom-change
+{
+	padding: 8px 15px;
+	background-color: inherit;
+	color: inherit;
+	font-size: inherit;
+	border: 2px $texte solid;
+	@include box-shadow(inset 1px 1px 3px $shadow-color, 1px 1px 3px $shadow-color);
+	margin: 0 10%;
+	width: 80%;
+	@include box-sizing(border-box);
+	text-align: center;
+	text-shadow: 2px 2px 5px $shadow-color;
+}
+
+.team-1
+{
+	left: 0;
+
+	.actions
+	{
+		left: 0;
+	}
+}
+
+.team-2
+{
+	right: 0;
+
+	.actions
+	{
+		right: 0;
+	}
+}
+
+.joueurs-detail
+{
+	width: 100%;
+	margin: 5% 0;
+	height: 50%;
+	padding: 0 15% 0 20%;
+	@include box-sizing(border-box);
+
+	font-size: 0.5em;
+	text-align: left;
+	overflow-y: auto;
+
+	li
+	{
+		cursor: pointer;
+		padding: 10px;
+
+
+		border-bottom: 1px solid $texte ;
+
+		.numero
+		{
+			display: inline-block;
+			width: 34px;
+		}
+
+		.detail {
+			float: right ;
+		}
+	}
+}
+
+.joueurs-list-edit input {
+	width: 50% ;
+	min-width: 60px ;
+	padding: 8px ;
+}
+
+.edit-list {
+	font-size: 20px ;
+	padding-top: 10px ;
+}

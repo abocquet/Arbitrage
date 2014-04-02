@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]>
+				<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+	<link href="stylesheets/main.css" media="all" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+
+	<a href="#" class="options">O</a>
+
+	<p class="chrono hidden">12' 35''</p>
+
+	<article class="team-1 equipe orange-fonce">
+		
+		<div class="edit">
+			<input type="text" class="nom-change" value="Yolo Swag"/>
+			<p class="edit-list">Editer la liste</p>
+
+			<ul class="joueurs-detail joueurs-list">
+				<li data-n="11">
+					<span class="detail">Rien</span>
+					<span class="numero">11</span>
+				</li>
+			</ul>
+			<ul class="joueurs-detail joueurs-list-edit hidden">
+				<li data-n="11">
+					<span class="detail supprimer">Supprimer</span>
+					<span class="numero">
+						<input type="number" value='11'>
+					</span>
+				</li>
+
+				<li class='text-center joueurs-add'>
+					Ajouter un joueur
+				</li>
+			</ul>
+			<div class="actions">
+				<span class="joueurs">O</span>
+			</div>
+		</div>
+
+		<div class="show hidden">
+			<p class="nom">Red Socks</p>
+			<p class="score">0</p>
+			<div class="actions">
+				<span class="moins">-</span>
+				<span class="joueurs">O</span>
+				<span class="plus">+</span>
+			</div>
+		</div>
+
+	</article>
+
+	<article class="team-2 equipe orange-clair">
+
+		<div class="edit">
+			<input type="text" class="nom-change" value="Yolo Swag"/>
+			<ul class="joueurs-detail">
+				<li>
+					<span class="detail">1</span>
+					<span class="numero">2</span>
+				</li>
+			</ul>
+			<div class="actions">
+				<span class="joueurs">O</span>
+			</div>
+		</div>
+
+		<div class="show hidden">
+			<p class="nom">Red Socks</p>
+			<p class="score">0</p>
+			<div class="actions">
+				<span class="moins">-</span>
+				<span class="joueurs">O</span>
+				<span class="plus">+</span>
+			</div>
+		</div>
+
+	</article>
+
+	<script src='js/jquery.min.js'></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
